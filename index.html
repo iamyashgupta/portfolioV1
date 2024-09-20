@@ -137,6 +137,32 @@
             <a href="mailto:yashgupta.dev0@gmail.com">Email</a>
         </div>
     </footer>
+     <button type="submit" onclick="getData()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+        async function getData() {
+            const myHeaders = new Headers();
+  
+            // Uncomment this if cookies are required
+            // myHeaders.append("Cookie", "Your-Cookie-String");
+
+            const requestOptions = {
+                method: "GET",
+                headers: myHeaders,
+                redirect: "follow"
+            };
+
+            try {
+                const response = await fetch("https://catfact.ninja/fact", requestOptions);
+                const data = await response.json(); // Use .json() since the response is JSON
+                document.getElementById('result').innerText = data.fact; // Update the result in the DOM
+                console.log("Result: ", data);
+            } catch (error) {
+                console.error("Error: ", error);
+            }
+        }
+    </script>
     
 
     <script src="script.js"></script>
