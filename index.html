@@ -16,7 +16,7 @@
         <p>Experienced Software Engineer</p>
         <nav>
             <ul>
-                <li><a href="https://iamyashgupta.github.io/portfolioV1/about">About</a></li>
+                <li onclick="renderPage()"><a href="#">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -166,7 +166,11 @@
         }
     </script>
     
-
+    <script>
+        function renderPage() {
+            window.location.href = "https://iamyashgupta.github.io/portfolioV1/about";
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
