@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #4a5568;
+}
+
+.section {
+    padding: 4rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.section-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.skill {
+    background-color: #e2e8f0;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-info div {
+    margin: 0.5rem 0;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.education-image {
+    flex: 1;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.education-qualifications {
+    flex: 1;
+    padding: 2rem;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.experience-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+}
+
+.experience-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: #667eea;
+    color: white;
+}
+
+@media (max-width: 640px) {
+    .education-container,
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .education-image,
+    .education-qualifications,
+    .experience-card {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
