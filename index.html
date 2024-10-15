@@ -1,176 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Gupta - Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="experince.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+
+    <!-- Blog start-->
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Blog End  -->
+
+    <style>
+        @media (max-width: 600px) {
+            .navul {
+                display: none;
+            }
+
+            .blok-card {
+                margin: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Yash Gupta</h1>
-        <p>Experienced Software Engineer</p>
-        <nav>
-            <ul>
-                <li onclick="renderPage()"><a href="#">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>Yash Gupta</h1>
+            <p>Experienced Software Engineer</p>
+            <nav class="navul">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Experienced Software Engineer with over 2 years of expertise in cloud computing, API development, and
-            integration using React and SOAP-based APIs. Skilled in functional logic development using Node.js and
-            JavaScript. Proficient in Oracle Integration Cloud and AWS services, including serverless deployment.</p>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <div class="content-container">
+                <h2>About Me</h2>
+                <img style="display: inline;"
+                    src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+                    alt="Yash Gupta" class="profile-image">
+                <p><strong>Experienced Software Engineer</strong> with over <strong>2 years of expertise</strong> in
+                    <strong>cloud computing</strong>, <strong>API development</strong>, and integration using
+                    <strong>React</strong> and <strong>SOAP-based APIs</strong>. Currently leading projects at
+                    <strong>Sanglob Business Private Limited</strong>, focusing on developing and integrating secure
+                    APIs for banking clients. My previous role as a <strong>Unity Developer</strong> at
+                    <strong>SparkVR</strong> involved creating immersive VR applications for educational institutions. I
+                    am passionate about leveraging technology to solve complex challenges and continuously expanding my
+                    skills in <strong>AI</strong> and <strong>machine learning</strong>.</p>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card-container">
-            <div class="project-card">
-                <h3>Vmshiksha.com</h3>
-                <p>Transitioned VM Shiksha Society’s model online using Laravel, PHP, MySQL, and HTML/CSS.</p>
-                <p>Integrated Razorpay for secure transactions.</p>
+
+        <section id="blog" class="section bg-light">
+            <div class="content-container">
+                <!-- <h2>Blog</h2>
+            <ul>
+                <li><a href="#">Understanding API Development: Best Practices</a></li>
+                <li><a href="#">Getting Started with AWS Services</a></li>
+            </ul> -->
+
+
+                <section class="container mx-auto my-8">
+                    <h2 class="section-title text-3xl font-bold text-gray-800">Latest Articles</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
+                                data-theme="light" data-type="VERTICAL" data-vanity="yash-gupta-b59092230"
+                                data-version="v1"><a class="badge-base__link LI-simple-link"
+                                    href="https://in.linkedin.com/in/yash-gupta-b59092230?trk=profile-badge"></a></div>
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Blog Post 2" class="blog-image">
+                            <h3 class="text-xl font-semibold mt-4">Blog Post Title 2</h3>
+                            <p class="text-gray-700">Short description of the blog post that gives a brief insight into
+                                the content.</p>
+
+                            <button class="explore-more-btn mt-4">Read More</button>
+                        </div>
+
+                        <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Blog Post 2" class="blog-image">
+                            <h3 class="text-xl font-semibold mt-4">Blog Post Title 2</h3>
+                            <p class="text-gray-700">Short description of the blog post that gives a brief insight into
+                                the content.</p>
+                            <button class="explore-more-btn mt-4">Read More</button>
+                        </div>
+
+                        <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdVM5_0W1puKdpYLjhwBDVzAN_hy-MxE7zA&usqp=CAU"
+                                alt="Blog Post 3" class="blog-image">
+                            <h3 class="text-xl font-semibold mt-4">Blog Post Title 3</h3>
+                            <p class="text-gray-700">Short description of the blog post that gives a brief insight into
+                                the content.</p>
+                            <button class="explore-more-btn mt-4">Read More</button>
+                        </div>
+
+                        <!-- Add more blog cards as needed -->
+                    </div>
+                </section>
             </div>
-            <div class="project-card">
-                <h3>VideoPD</h3>
-                <p>Automated loan eligibility verification via video conferencing using Oracle Integration Cloud and JavaScript API.</p>
-            </div>
-            <div class="project-card">
-                <h3>API-HTML-PDF</h3>
-                <p>Developed an API for HTML to PDF conversion for bill generation using HTML, EJS, JavaScript, and Node.js.</p>
-            </div>
-            <div class="project-card">
-                <h3>Data-Transfer-Banks</h3>
-                <p>Created a secure data transfer system for banks using RSA encryption and certificates.</p>
-            </div>
-            <div class="project-card">
-                <h3>LOS & LMS</h3>
-                <p>Integrated 200+ APIs for loan applications including document verification, eligibility checks, and transaction history analysis.</p>
+        </section>
+
+        <section id="projects" class="section bg-light">
+            <section class="container mx-auto my-8">
+                <h2 class="section-title text-3xl font-bold text-gray-800">Projects</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="blog-card blok-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://th.bing.com/th/id/OIP.Dz_CWTphzwkzAk89IRZtzAHaEc?rs=1&pid=ImgDetMain"
+                            alt="Blog Post 1" class="blog-image">
+                        <h3 class="text-xl font-semibold mt-4">Blog Post Title 1</h3>
+                        <p class="text-gray-700">Short description of the blog post that gives a brief insight into the
+                            content.</p>
+                        <p class="text-gray-700">Short description of the blog post that gives a brief insight into the
+                            content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus quod non
+                            sequi consequatur repellendus nemo laudantium tempore quas, blanditiis deserunt adipisci
+                            iure saepe cum fugiat molestiae, facilis quos eum.</p>
+                        <button class="explore-more-btn mt-4">Read More</button>
+                    </div>
+
+                    <div class="blog-card blok-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://1.bp.blogspot.com/-cJWtSptShWM/YF3WYweNYgI/AAAAAAAAALo/v2jmYXMEHaMbCL8c5eUkLBcEXYbgo_r1wCNcBGAsYHQ/s2048/what-is-cryptography-encryption-decryption-public-private-key.png"
+                            alt="Blog Post 2" class="blog-image">
+                        <h3 class="text-xl font-semibold mt-4">Blog Post Title 2</h3>
+                        <p class="text-gray-700">Short description of the blog post that gives a brief insight into the
+                            content.</p>
+                        <p class="text-gray-700">Short description of the blog post that gives a brief insight into the
+                            content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus quod non
+                            sequi consequatur repellendus nemo laudantium tempore quas, blanditiis deserunt adipisci
+                            iure saepe cum fugiat molestiae, facilis quos eum.</p>
+                        <button class="explore-more-btn mt-4">Read More</button>
+                    </div>
+
+                    <div class="blog-card blok-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdVM5_0W1puKdpYLjhwBDVzAN_hy-MxE7zA&usqp=CAU"
+                            alt="Blog Post 3" class="blog-image">
+                        <h3 class="text-xl font-semibold mt-4">Blog Post Title 3</h3>
+                        <p class="text-gray-700">Short description of the blog post that gives a brief insight into the
+                            content.</p>
+                        <p class="text-gray-700">Short description of the blog post that gives a brief insight into the
+                            content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus quod non
+                            sequi consequatur repellendus nemo laudantium tempore quas, blanditiis deserunt adipisci
+                            iure saepe cum fugiat molestiae, facilis quos eum.</p>
+                        <button class="explore-more-btn mt-4">Read More</button>
+                    </div>
+
+                    <!-- Add more blog cards as needed -->
+                </div>
+            </section>
+        </section>
+
+        <!-- <section id="skills" class="section">
+        <div class="content-container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">Node.js</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Java</div>
+                <div class="skill">React</div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-card-container">
-            <div class="skills-card">
-                <h3>Programming Skills</h3>
-                <p>Node.js, JavaScript, Java, React</p>
+        <section class="section" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="section-title">Experience</h3>
+            <div class="experience-container flex flex-wrap justify-center">
+                <div class="experience-card flex items-center">
+                    <img style="height: 35px;" src="https://sanglob.in/img/logo.png" alt="Sanglob Logo"
+                        class="experience-logo">
+                    <div>
+                        <h4 class="font-semibold">Consultant and Project Lead</h4>
+                        <p><strong>Sanglob Business Private Limited</strong> | August 2023 - Present | Pune, Maharashtra
+                        </p>
+                        <p><strong>Technology Highlights:</strong> REST, SOAP, API Integration, JSON, XML</p>
+                        <p><strong>Projects:</strong> API Creation for Banking Clients</p>
+                        <a href="#" class="text-blue-500 hover:underline">View More</a>
+                    </div>
+                </div>
+
+                <div class="experience-card flex items-center">
+                    <img src="https://media.licdn.com/dms/image/v2/C4D0BAQE0-zHDZ-Pz8w/company-logo_200_200/company-logo_200_200/0/1658231102501/sparkvr2_logo?e=2147483647&v=beta&t=1Rx13SJvK9uhFJoDttDsXedAwAQlB-vcjN4EL3En6eE"
+                        alt="SparkVR Logo" class="experience-logo">
+                    <div>
+                        <h4 class="font-semibold">Unity Developer</h4>
+                        <p><strong>SparkVR</strong> | January 2023 - August 2023 | Jabalpur, Madhya Pradesh</p>
+                        <p><strong>Technology Highlights:</strong> C, JavaScript, C++, VR Development</p>
+                        <p><strong>Projects:</strong> Immersive Educational Applications</p>
+                        <a href="#" class="text-blue-500 hover:underline">View More</a>
+                    </div>
+                </div>
             </div>
-            <div class="skills-card">
-                <h3>Database</h3>
-                <p>PostgreSQL, MySQL, MongoDB</p>
-            </div>
-            <div class="skills-card">
-                <h3>Software</h3>
-                <p>Postman, Git, Docker</p>
-            </div>
-            <div class="skills-card">
-                <h3>Certificates</h3>
-                <p>Oracle Cloud Infrastructure (Oracle)</p>
-            </div>
-            <div class="skills-card">
-                <h3>Cloud Platforms</h3>
-                <p>AWS: Lambda, EC2, S3, API Gateway</p>
-                <p>OCI: Oracle Integration Cloud, Oracle Functions, Virtual Cloud Network, API Gateway</p>
-            </div>
-            <div class="skills-card">
-                <h3>Familiar</h3>
-                <p>Python, AI, ML</p>
-            </div>
-            <div class="skills-card">
-                <h3>Other</h3>
-                <p>Airflow, HDFS, Spring Boot, Git, CI/CD</p>
+        </section>
+
+        <!-- <section id="testimonials" class="section">
+        <div class="content-container">
+            <h2>Testimonials</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p>"Yash is an exceptional developer who consistently delivers high-quality work." - Client A</p>
+                </div>
+                <div class="grid-item">
+                    <p>"His expertise in cloud technologies helped us streamline our processes." - Client B</p>
+                </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-card-container">
-            <div class="experience-card">
-                <h3>Node.js and React Developer</h3>
-                <p>IBM</p>
-                <p>Developed APIs using REST and SOAP protocols, managing JSON and XML responses, and deploying various projects tailored to financial institutions.</p>
-            </div>
-            <div class="experience-card">
-                <h3>Consultant and Project Lead</h3>
-                <p>Sanglob Business Private Limited</p>
-                <p>Leading web projects with a focus on API creation and integration for banking clients.</p>
-            </div>
-            <div class="experience-card">
-                <h3>Unity Developer</h3>
-                <p>SparkVR</p>
-                <p>Developed advanced VR applications for educational institutions to create immersive learning experiences.</p>
-            </div>
-        </div>
-    </section>
+        <section id="blog" class="section bg-light">
+            <div class="content-container">
+                <!-- <h2>Blog</h2>
+            <ul>
+                <li><a href="#">Understanding API Development: Best Practices</a></li>
+                <li><a href="#">Getting Started with AWS Services</a></li>
+            </ul> -->
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
 
-    <div id="modal" class="modal">
-        <div id="modal-content" class="modal-content"></div>
-    </div>
-    <button type="submit" onclick="getData()">Submit</button>
-    <p id="result"></p>
+                <section class="container mx-auto my-8">
+                    <h2 class="section-title text-3xl font-bold text-gray-800">Latest Articles</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChmC7jgH9eGX0Dya1a6iHn2Y6VUk1BRwAKA&usqp=CAU"
+                                alt="Blog Post 1" class="blog-image">
+                            <h3 class="text-xl font-semibold mt-4">Blog Post Title 1</h3>
+                            <p class="text-gray-700">Short description of the blog post that gives a brief insight into
+                                the content.</p>
+                            <button class="explore-more-btn mt-4">Read More</button>
+                        </div>
+
+                        <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Blog Post 2" class="blog-image">
+                            <h3 class="text-xl font-semibold mt-4">Blog Post Title 2</h3>
+                            <p class="text-gray-700">Short description of the blog post that gives a brief insight into
+                                the content.</p>
+                            <button class="explore-more-btn mt-4">Read More</button>
+                        </div>
+
+                        <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdVM5_0W1puKdpYLjhwBDVzAN_hy-MxE7zA&usqp=CAU"
+                                alt="Blog Post 3" class="blog-image">
+                            <h3 class="text-xl font-semibold mt-4">Blog Post Title 3</h3>
+                            <p class="text-gray-700">Short description of the blog post that gives a brief insight into
+                                the content.</p>
+                            <button class="explore-more-btn mt-4">Read More</button>
+                        </div>
+
+                        <!-- Add more blog cards as needed -->
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="content-container">
+                <!-- <h2>Certifications</h2> -->
+                <!-- <ul>
+                <li>AWS Certified Solutions Architect - Associate</li>
+                <li>Oracle Cloud Infrastructure Foundations Associate</li>
+            </ul> -->
+                <section class="section-products sec-products" id="Product-section">
+
+                    <main class="container mx-auto">
+                        <h2 class="text-3xl mb-4 font-bold text-gray-800">Certifications</h2>
+
+                        <div class="products-slider-container" data-aos="fade-up" data-aos-delay="100">
+                            <div class="products-slider">
+                                <!-- Product Cards -->
+                                <div class="product-card"
+                                    onclick="openModal('Cloud Technology', 'Description of Cloud Technology', 'https://media.licdn.com/dms/image/v2/D4D22AQEijjjgGEq7TQ/feedshare-shrink_800/feedshare-shrink_800/0/1693935878853?e=2147483647&v=beta&t=Ys158DCOe8yzjHQbS9s4Xmhtu4Jlu4hzw9twzNdwpnQ')">
+                                    <img loading="lazy"
+                                        src="https://media.licdn.com/dms/image/sync/v2/C5627AQE9Ct08r5nGXg/articleshare-shrink_800/articleshare-shrink_800/0/1712090610293?e=1729090800&v=beta&t=fVSr4vnK4AUnU_zTPpoFtoU1Sw7yD7eFVQhdtX7Vv1w"
+                                        alt="Cloud Technology" class="product-image">
+                                    <div class="product-label">Featured</div>
+                                    <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+                                    <h3 class="product-title font-semibold">Oracle Cloud Architecture</h3>
+
+                                    <p class="product-description text-gray-700">Description of Cloud Technology.</p>
+                                    <button class="explore-more-btn">Explore More</button>
+                                </div>
+
+                                <div class="product-card"
+                                    onclick="openModal('Product 1', 'Description of Product 1', 'https://media.licdn.com/dms/image/v2/D4D2DAQHA8SF4FCUDFA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1708335193546?e=1727596800&v=beta&t=jMnqC-CwSlbgM6tU8zcYWIXQxBXU7xsZmTVUXFflR-w')">
+                                    <img loading="lazy"
+                                        src="https://media.licdn.com/dms/image/v2/D562DAQEPGSFzDyZeVw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1709665322750?e=1729101600&v=beta&t=iyD23o7_gbTDtTuLjVVmyDXY4XAAwjNYJBMHAZLp86k"
+                                        alt="Product 1" class="product-image">
+                                    <div class="product-label">New</div>
+                                    <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+                                    <h3 class="product-title font-semibold">Oracle Certified Architecture</h3>
+
+                                    <p class="product-description text-gray-700">Description of Product 1.</p>
+                                    <button class="explore-more-btn">Explore More</button>
+                                </div>
+
+                                <div class="product-card"
+                                    onclick="openModal('Cloud Technology', 'Description of Cloud Technology', 'https://media.licdn.com/dms/image/v2/D4D22AQEijjjgGEq7TQ/feedshare-shrink_800/feedshare-shrink_800/0/1693935878853?e=2147483647&v=beta&t=Ys158DCOe8yzjHQbS9s4Xmhtu4Jlu4hzw9twzNdwpnQ')">
+                                    <img loading="lazy"
+                                        src="https://media.licdn.com/dms/image/v2/D4D22AQFyWVkRdocIxg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1691864358561?e=1730332800&v=beta&t=imKuBNdqbDra4LWU2ROg0ERFxOdPvwYE_3l6AY-y1Yk"
+                                        alt="Cloud Technology" class="product-image">
+                                    <div class="product-label">Featured</div>
+                                    <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+                                    <h3 class="product-title font-semibold">Virtual Reality (Meta)</h3>
+
+                                    <p class="product-description text-gray-700">Description of Cloud Technology.</p>
+                                    <button class="explore-more-btn">Explore More</button>
+                                </div>
+
+                                <div class="product-card"
+                                    onclick="openModal('Product 1', 'Description of Product 1', 'https://media.licdn.com/dms/image/v2/D4D2DAQHA8SF4FCUDFA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1708335193546?e=1727596800&v=beta&t=jMnqC-CwSlbgM6tU8zcYWIXQxBXU7xsZmTVUXFflR-w')">
+                                    <img loading="lazy"
+                                        src="https://media.licdn.com/dms/image/v2/D4D2DAQHA8SF4FCUDFA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1708335193546?e=1729090800&v=beta&t=5F4xLHnUA7-poauwNWtvrjwR2t104mI0uIfPMaID1Wg"
+                                        alt="Product 1" class="product-image">
+                                    <div class="product-label">New</div>
+                                    <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+                                    <h3 class="product-title font-semibold">IBM</h3>
+
+                                    <p class="product-description text-gray-700">Description of Product 1.</p>
+                                    <button class="explore-more-btn">Explore More</button>
+                                </div>
+
+
+
+                                <div class="product-card"
+                                    onclick="openModal('Cloud Technology', 'Description of Cloud Technology', 'https://media.licdn.com/dms/image/v2/D4D22AQEijjjgGEq7TQ/feedshare-shrink_800/feedshare-shrink_800/0/1693935878853?e=2147483647&v=beta&t=Ys158DCOe8yzjHQbS9s4Xmhtu4Jlu4hzw9twzNdwpnQ')">
+                                    <img loading="lazy"
+                                        src="https://media.licdn.com/dms/image/v2/D4D22AQE4q9y0DLmytA/feedshare-shrink_800/feedshare-shrink_800/0/1728134391198?e=1731542400&v=beta&t=cjUFMC4oel_IvEI3iyXIk6XPjH1jQkCo7lGpE3xit40"
+                                        alt="Cloud Technology" class="product-image">
+                                    <div class="product-label">Featured</div>
+                                    <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+                                    <h3 class="product-title font-semibold">Postman</h3>
+
+                                    <p class="product-description text-gray-700">Description of Cloud Technology.</p>
+                                    <button class="explore-more-btn">Explore More</button>
+                                </div>
+
+                                <div class="product-card"
+                                    onclick="openModal('Cloud Technology', 'Description of Cloud Technology', 'https://media.licdn.com/dms/image/v2/D4D22AQEijjjgGEq7TQ/feedshare-shrink_800/feedshare-shrink_800/0/1693935878853?e=2147483647&v=beta&t=Ys158DCOe8yzjHQbS9s4Xmhtu4Jlu4hzw9twzNdwpnQ')">
+                                    <img loading="lazy" src="certification/Gerra.png" alt="Cloud Technology"
+                                        class="product-image">
+                                    <div class="product-label">Featured</div>
+                                    <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+                                    <h3 class="product-title font-semibold">Cloud Technology</h3>
+
+                                    <p class="product-description text-gray-700">Description of Cloud Technology.</p>
+                                    <button class="explore-more-btn">Explore More</button>
+                                </div>
+
+                                <div class="product-card"
+                                    onclick="openModal('Product 1', 'Description of Product 1', 'https://media.licdn.com/dms/image/v2/D4D2DAQHA8SF4FCUDFA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1708335193546?e=1727596800&v=beta&t=jMnqC-CwSlbgM6tU8zcYWIXQxBXU7xsZmTVUXFflR-w')">
+                                    <img loading="lazy"
+                                        src="https://media.licdn.com/dms/image/v2/D562DAQGY2ftSXcY4sA/profile-treasury-document-cover-images_480/profile-treasury-document-cover-images_480/0/1709665791364?e=1729101600&v=beta&t=dg-3XyuDk3l3RUBnD8nvNAfV1fnN2PXVo9INALSdNtA"
+                                        alt="Product 1" class="product-image">
+                                    <div class="product-label">New</div>
+                                    <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+                                    <h3 class="product-title font-semibold">Cyber Securities</h3>
+
+                                    <p class="product-description text-gray-700">Description of Product 1.</p>
+                                    <button class="explore-more-btn">Explore More</button>
+                                </div>
+
+
+
+
+
+
+                                <div class="product-card"
+                                    onclick="openModal('Product 1', 'Description of Product 1', 'https://media.licdn.com/dms/image/v2/D4D2DAQHA8SF4FCUDFA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1708335193546?e=1727596800&v=beta&t=jMnqC-CwSlbgM6tU8zcYWIXQxBXU7xsZmTVUXFflR-w')">
+                                    <img loading="lazy" src="certification/AWS_S3.png" alt="Product 1"
+                                        class="product-image">
+                                    <div class="product-label">New</div>
+                                    <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+                                    <h3 class="product-title font-semibold">Product 1</h3>
+
+                                    <p class="product-description text-gray-700">Description of Product 1.</p>
+                                    <button class="explore-more-btn">Explore More</button>
+                                </div>
+
+
+
+
+
+
+                                <!-- Additional product cards go here -->
+                            </div>
+
+                            <div class="nav-buttons-container">
+                                <button class="nav-button prev-btn" onclick="scrollProducts('prev')"><i
+                                        class="fas fa-chevron-left"></i></button>
+                                <button class="nav-button next-btn" onclick="scrollProducts('next')"><i
+                                        class="fas fa-chevron-right"></i></button>
+                            </div>
+
+                            <div class="pagination">
+                                <span class="dot active" onclick="goToSlide(0)"></span>
+                                <span class="dot" onclick="goToSlide(1)"></span>
+                                <!-- More dots based on the number of products -->
+                            </div>
+                        </div>
+
+                        <div id="productModal"
+                            class="modal fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+                            <div class="modal-content">
+                                <span class="close-modal">&times;</span>
+                                <h2 id="modalTitle" class="text-xl font-bold"></h2>
+                                <img id="modalImage" class="object-cover rounded-md w-full h-48" />
+                                <p id="modalDescription" class="text-gray-700 mt-2"></p>
+                                <button class="explore-more-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+                    <script>
+                        AOS.init();
+
+                        let currentIndex = 0;
+                        const productCards = document.querySelectorAll('.product-card');
+                        const dots = document.querySelectorAll('.dot');
+
+                        function scrollProducts(direction) {
+                            const slider = document.querySelector('.products-slider');
+                            const scrollAmount = 350;
+
+                            if (direction === 'next') {
+                                slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                                currentIndex = (currentIndex + 1) % productCards.length;
+                            } else if (direction === 'prev') {
+                                slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                                currentIndex = (currentIndex - 1 + productCards.length) % productCards.length;
+                            }
+                            updatePagination();
+                        }
+
+                        function goToSlide(index) {
+                            const slider = document.querySelector('.products-slider');
+                            const scrollAmount = 350;
+                            const direction = index > currentIndex ? 'next' : 'prev';
+                            for (let i = Math.abs(index - currentIndex); i > 0; i--) {
+                                scrollProducts(direction);
+                            }
+                        }
+
+                        function updatePagination() {
+                            dots.forEach((dot, index) => {
+                                dot.classList.toggle('active', index === currentIndex);
+                            });
+                        }
+
+                        function openModal(title, description, imgSrc) {
+                            document.getElementById('modalTitle').innerText = title;
+                            document.getElementById('modalDescription').innerText = description;
+                            document.getElementById('modalImage').src = imgSrc;
+                            document.getElementById('productModal').classList.remove('hidden');
+                        }
+
+                        document.querySelector('.close-modal').onclick = function () {
+                            document.getElementById('productModal').classList.add('hidden');
+                        };
+
+                        function addToWishlist(event) {
+                            event.stopPropagation();
+                            alert("Added to Wishlist!");
+                        }
+
+                        let autoplayInterval = setInterval(() => scrollProducts('next'), 3000);
+
+                        document.querySelector('.products-slider-container').addEventListener('mouseenter', () => {
+                            clearInterval(autoplayInterval);
+                        });
+
+                        document.querySelector('.products-slider-container').addEventListener('mouseleave', () => {
+                            autoplayInterval = setInterval(() => scrollProducts('next'), 3000);
+                        });
+
+                        document.addEventListener('keydown', (event) => {
+                            if (event.key === 'ArrowRight') {
+                                scrollProducts('next');
+                            } else if (event.key === 'ArrowLeft') {
+                                scrollProducts('prev');
+                            }
+                        });
+                    </script>
+                </section>
+
+
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="content-container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Yash Gupta. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="https://linkedin.com/in/yash-gupta-b59092230" target="_blank">LinkedIn</a>
-            <a href="https://github.com/YashGupta" target="_blank">GitHub</a>
-            <a href="mailto:yashgupta.dev0@gmail.com">Email</a>
+        <div class="footer-content">
+            <p>&copy; 2024 Yash Gupta. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/yash-gupta-b59092230" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/YashGupta" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:yashgupta.dev0@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </footer>
-     <button type="submit" onclick="getData()">Submit</button>
-    <p id="result"></p>
 
     <script>
-        async function getData() {
-            const myHeaders = new Headers();
-  
-            // Uncomment this if cookies are required
-            // myHeaders.append("Cookie", "Your-Cookie-String");
-
-            const requestOptions = {
-                method: "GET",
-                headers: myHeaders,
-                redirect: "follow"
-            };
-
-            try {
-                const response = await fetch("https://catfact.ninja/fact", requestOptions);
-                const data = await response.json(); // Use .json() since the response is JSON
-                document.getElementById('result').innerText = data.fact; // Update the result in the DOM
-                console.log("Result: ", data);
-            } catch (error) {
-                console.error("Error: ", error);
-            }
-        }
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    const hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+        });
     </script>
-    
-    <script>
-        function renderPage() {
-            window.location.href = "https://iamyashgupta.github.io/portfolioV1/about";
-        }
-    </script>
-    <script src="script.js"></script>
+
 </body>
+
 </html>
